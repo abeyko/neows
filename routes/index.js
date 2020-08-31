@@ -25,7 +25,7 @@ router.post('/', jsonParser, function(req, res) {
   endDate = moment(endDate, "YYYY-MM-DD");
 
   async function getPages() {
-    const baseUrl = `http://www.neowsapp.com/rest/v1/neo/browse`;
+    const baseUrl = `https://api.nasa.gov/neo/rest/v1/neo/browse`;
     // 1221 pages total...takes ~.6 seconds to process each element and there are
     // 24410 elements total across all pages, so it would take ~14,646 seconds = ~244 minutes = ~4 hours
     let totalPages = 1221;
